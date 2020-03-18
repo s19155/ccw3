@@ -11,9 +11,9 @@ namespace ccw3.Controllers
     public class StudentsController : ControllerBase
     {
         [HttpGet]
-        public string GetStudent()
+        public string GetStudent(string orderBy)
         {
-            return "washi wa";
+            return $"Do re mi fa sortBy = {orderBy}";
         }
 
         [HttpGet("{id}")]
